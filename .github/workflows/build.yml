@@ -24,8 +24,8 @@ jobs:
       - name: Concatenate JavaScript files
         run: |
           mkdir -p dist
-          cat *.js > dist/grafy.bundle.js  # Concatenate all .js files
-
+          cat src/*.js > dist/grafy.bundle.js  # Concatenate all .js files in the src folder
+          
       - name: Commit and push changes
         run: |
           git config --local user.name "github-actions[bot]"
