@@ -1,6 +1,4 @@
-import 'p5'
-
-export class Grid {
+class Grid {
     constructor(width, height, rows, cols) {
         this.width = width;
         this.height = height || width; // Assume height = width if empty
